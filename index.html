@@ -1,0 +1,192 @@
+<!-- 
+    # TASK 17
+    # Compulsory Task 
+    # index.html
+    # written by Tintswalo Anicky Makhubele
+    # date: 27 July 2020 -->
+
+
+<!DOCTYPE html>
+
+<!-- open html tag -->
+<html>
+<head>
+	<!-- page title -->
+	<title>Tintswalo Anicky Makhubele - Curriculum Vitae</title>
+
+	<meta name="viewport" content="width=device-width"/>
+	<meta name="description" content="The Curriculum Vitae of Tintswalo Anicky Makhubele."/>
+	<meta charset="UTF-8"> 
+
+	<!-- link the css file -->
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+
+		<!-- profile image -->
+		<div id="headshot" class="quickFade">
+			<img src="anicky.jpg" alt="TA" />
+		</div>
+		
+		<!-- profile name -->
+		<div id="name">
+			<h1 class="quickFade delayTwo">Tintswalo Anicky <br>Makhubele</h1>
+			<h2 class="quickFade delayThree">SOFTWARE ENGINEER</h2>
+		</div>
+		
+		<!-- List of contact details -->
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmyjHEumBig6WOT9XZmStTrTcduRDoTEjP-w&usqp=CAU" width="16" height="16" alt="contact number"> +27 733 533 672</li>
+                <li><a target = "_blank" href = "https://mail.google.com/mail/?view=cm&fs=1&tf=1"title="Gmail"><img src="data:image/png;base64,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" width="16" height="16" alt="gmail"> anickymak@gmail.com</a></li>
+                <li><a target = "_blank" href = "https://www.linkedin.com/in/anicky-makhubele-89913792"title="LinkedIn"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAB6CAMAAABHh7fWAAAAZlBMVEUAd7f///8AdLYAabEAcbVdl8bV5vEAbrN4p86mx+Dh7PSErdE+i8FBicAXern4/P3r8/jA1edJkMMYf7sAZa+avttUk8VknMmOtdaVtda50uZLjMHH3OxwoMumw97S4e6xyuE3g70rNHavAAADW0lEQVRoge2bbbeiIBDHedLRzKdK63Zbq+//JVft1ioOamzA2bP8X/RG5XeAAWYmhtBeeZns9sSC9rukzB9M0v82BASzQSaECSDNC10EYAf7FATFA12kwi6ZEJEWPTqwTm7ZQYduLI/2Q9BQkrsAd8pJ6aTTbbdLkjiY6U4iITtL61kW2xErexgmZ+A5MSHA2u46FPBtUsXV11Fwu3TIqoL+6FyDRTgkL3APz6ytP3GmY212ltgTcutIfFsZc2gm5JZtAy2OCJnSCzePZhsUTQPj/Ra/cDK9GLc0flGg6d14twsVOjLcbfadq9CxYZeCqaaa0tJ0r9Vo03bG8FXd6Wx6wNVzbdxnZkoLP5pe2LxUkPPM9LpmgQJt2sBbwRVHm9/MWvcYJd9sxChwQsgbO24KxBNyYWG4e/FKIod3a34hD0aru7IZCDAePc/tososR8ECxC5KkmMGLmLgNuhyEXL9w2Law8XGeuNhO0mCZPtWmdCYMHbYpyPBwMYZlx5mf4IDwUUUXzb548zPw/MpPbwVprJ04i5ULzbbTg708qdxYEk42Qfz+P5GgI55Cy9PGAtO+qNFiErh4JTp2o0Bdc+eIRerkYebrsu1ImDqer52OxQR8nX4RGOexCYjkCjBfcfJKrYOGj1oR9+v2hM10OgnY60KkjXQmAHIWhM3vY8ulA70UCuy7u+j16k1RldoeloccmPoYrHbxtDLyQFz6HBpgZlDLyb+zKHpaWHEDaKXtjR9dFgd6zqISuUOky8sL110WAN0DpPgGZZl7ZXOT7YmOh44I1z1VmQCfTsM2wBFNqiatzMttLxkOT7mC1koLXQtO8x31Nau8yaug542CTfsveIgv/fX6OPEfFD/kdKPowukmQx1jT8+4GekRYZmoj5u4dhpCGjub/7I1kDL9t2j0eU1nw7ScAuxBgXqmn8ajTp8Ao1H5jdxo+itR3u0R3u0R3u0R3u0R3u0R3u0R/+HaOzelx00uyOfPP9PZXckO3PFMiT41ZqlhLh8N2TYL5g+zPF79TC9hEu/lv554UETj5QM/iAH+WG1V6SFeCS92awoqmECRhq1zUB6qBxE+U2bl72X5LAMwWHxhcOSE4eFNg7LixwWVbksJXNZQOewbJA6LJakbkpEfwOP2TuVUrL8ZgAAAABJRU5ErkJggg==" width="16" height="16" alt="LinkedIn" /> Anicky Makhubele</a ></li>
+                <li><a target = "_blank" href = "https://github.com/Tintswalo-Anicky"title="GitHub"><img src="data:image/png;base64,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" width="16" height="16" alt="GitHub"/> Tintswalo-Anicky</a></li>                
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+
+		<!-- short bio description section-->
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>BIO</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<p>I am a highly motivated and hardworking individual with an ability to think logically to solve problems programmatically. 
+                        Possessing an excellent communication skill and an ability to communicate professionally with people at all levels and adapt quickly to new 
+                        environment. Reliable, punctual, willing and eager to learn new tasks or skills quickly. <br><br>
+                    
+                        Graduated from the University of Venda with a BSc. In computer Science and Information System,I'm currently enrolled with HyperionDev for 
+                        Software Engineering Bootcamp, seeking for a position to occupy in a well-respected and competitive organisation where I can improve my knowledge
+                        and skills to grow closer to my carrier goals.</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+		
+		<!-- personal details description section-->
+		<section>
+			<div class="sectionTitle">
+				<h1>PERSONAL DETAILS</h1>
+			</div>
+			
+			<div class="sectionContent">
+		
+                <ul class="keySkills">
+					<!-- An unordered list -->
+                    <li>FULL NAMES   : <br><p>Tintswalo Anicky Makhubele</p></li>
+                    <li>AGE          : <br><p>26</p></li>
+                    <li>NATIONALITY  : <br><p>South African</p></li>
+                    <li>ADDRESS      : <br><p>187 Albertins Sisulu Road New Doornfontein Johannesburg</p></li>
+				</ul>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<!-- skills description sectiob-->
+		<section>
+			<div class="sectionTitle">
+				<h1>SKILLS</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<!-- An unordered list -->
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>MYSQL</li>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+		<!-- Education description  section-->
+		<section>
+			<div class="sectionTitle">
+				<h1>EDUCATION</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2><a target = "_blank" href = "https://www.hyperiondev.com"title="hyperiondev"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACBCAMAAADQfiliAAAAbFBMVEUJNFr///8AKVNqeI3S1twAEUiUoK4AHUwAK1QAJlGgq7iZpLLGzdVue5AAIE4AF0pIXXmtt8Lw8vQACkUAL1fZ3uN1hppRYHpCWHRZaoI2T24kQmTo6+6MmaoAADcAAD4AAES7w8xDUnAwQ2SvqfwQAAABPUlEQVR4nO3Z749DMBzH8VaxmitmtR+23dj9///j7dG0uuwiaX3lfF7PRMU7RKowBgAAAAAAAAAA8I/oyKFHI/T7I30FnJQYUSfrlNm5jUIWyJw7toUxoHgOuIS8CjJ1C3KzoPziXMnABdfYcKUouH0nL/ecoiDdDNvZdvkFWvt9NCYXyCreeU2YXJA8t88+78r0gphz4fMioAAFKFhyQVrKQUdRUDemmqDAsYAC44zBC1hbOY4XY3/4Au2yZsLwBX9BAQpQMFeBlp+X88EL5GHn6CsjYbUz09wF/cGgGop3pC4b3Nf5nogCFKyyICcvUPZyYP4CFglhTr4EBSyylgMUBba3BSIbli8dScGtOr48GoqCseAFKWmB/mni1nw4ir4e4yLkt3amk9L+p7PZO4IGAAAAAAAAAAAArM8vDtUlsp6BvKUAAAAASUVORK5CYII=" width="16" height="16" alt="hyperiondev"/></a> HyperionDev</h2>
+					<p class="subDetails">Software Engineering</p>
+                    <p class="subDetails">05-02-2020</p>
+				</article>
+				<br>
+				<article>
+					<h2><a target = "_blank" href = "https://www.univen.ac.za"title="univen"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAACACAMAAAAbIvrHAAABGlBMVEX///8PP3bJQSy9o1dOJgC8olS6n07jqqTGMBMOO3W5nUm7oVEAO3T6+/wAMG4AK2wAJ2ry7eIANHDHsXUAGGTHNx7x8/YAImgAG2XIPCX8+/jTw5i/pl3r49Lf07XBqWT39O3FJQC3mT88AABFFgDe4ejn6e4AEWIAAF/NuofJztk+BQDouLNQY4xEW4cAB2CNlK42UIDazKiwuMjy2dfemZFrfJ3tycX46ejPXk/BAAB8i6fXfnTRZVnTbmLMUkGirMCumXa9qYObhGfWgGBab5Q1RnuDZ0pqSzNXMhVePCOOdlMzAABRKxd1WkLey5jX0ctiRDepnJVMJR6Ne3XZmHbTc1bVrIZROCjpzb2Cel3SiWjgv5kAAE7jscfJAAAN3ElEQVR4nO1bjVeiShsHXUhBRMUvQEUtKCkINNHCTbOl2m237sfbtvft7v//b7zPzAB+XNt7K9rOe859zikRhpnfPN/PzEhRL6MjynxhDy8FMKQs4U0RnG5RtTdlwlFniyrZb4ngGBBkC4O3AzDKZABBzn07BKcyQkDn34wJR50URpCj3wrBe5kgoAuztwEw6qRCBDm3+iYIjuUIwRsxYZRJxQhyF2/BhJS8QECLs58P4ACxIEZAl34+EzALFgjys58N4KCTWkFAF145RCqa2lSWvo9TqTUEeX+5fbvZ6ycModlltX57geg0s4ZAXHLNRVXjOOWvnbyMJJ7hWHWB4bSygmApQDZ7HMuwraQBUEUunU7z3V4xuvG+stEai1KXT6cZLXEAFKWyAIHhuYgP4+mST3Si8Xscz0A7tvkKCNqNdFqTWJ5rhAw+ykQIslGu2E+zLCM10nzvFQBA9xyjtZsSB6Jo4xvDTIigrOPvRYlju2oR5MUVf9DP80nRGK6FBc1yhA1hdC4RGbS6fBeJqMez6qsAQBbJaMjGmmBreIwDkqXlDYRP4jgJTb3IMMlZYltZ7UriiYYpKstJ8EipIAQlDzXVOIYwRmXXLFFRng+o15B6ar/Zjr4XOV4iV01QSLg9QbmyCAVDMc1poew5Jh13UGz1VUlKv8AwJI7hWa7blfrEJ/fYSMeA6WyRGp1AvQAJUpPrRtrfYjk8YLupat0ux/JM9yX+ua2Bd0GeiGXTPeBFO71QMhUgjN+PqMADAFw8isb20NwlBuwSv8u9TC2LBAFGwTV6xT670LI+WAT6IlC9bix5iB/NlsRzTPya9EK1bHZRN8BO5Or4LjHIkNrUmBpNQSLUwvx7fCMNw4Pwul3iRF9sFy2IB1xTafYlvssyAINZQJhkhseZyfBkFGNCrhussav1+k1QiTTDtl8KAMcD4gaUporYy7CNVjivYaUipyqVyigan4GgCMJqtbHb4JKKDz021iYFqxjPSajjIQRohEBOTd8fwLN+mmPZRi8yXnChaS6ZGI27Wsyl2Gp02a6kCJCkdCZH49ExANlCHoLrLidSKvdSM1hQm1tztEWV76KaqTLBCKdyRgGVlVYmDCrMJhchm+x6vG23qK1pqnOEvwwr8vSovSpxpcHwWoKJGhhEd12nJiCEMb7agig9Wnuqckwj0RDd76b59to9HBkxFjkzXnsGdsAlliYpShsIgr609gCmXkE2AImKfLD2Tho8l7IeWp9I7Xax2VJ7kqZpDUTgaSA+FZf6fD+tyPLx6bQC5dPW0ovFZh+sh0GvwcsQXVutZrH9xOGLak9juhyKbIhCF8+wUDT0IndEjcdbAAGosjWOCqZ2qwfpC45JTEgQXDl4T1q8+I+oybLpjQTJMsTqcEZbJ8gXHJ+EMij2NRI/Nr3X1Z6qFz1uqStmQZgXnEQmNIIM4UgZkdk3VufOLEPh2WckCU2NDaMy5MiaREjT0pjJDNcgjBCIAIpqA0VEYDjf0Fab4hxBepZltqH6gDSjh/QoEqGC9bPBwn2OiWu4Yo9loSkEBdxWWWqqwW3++VlSq9fajB2CNYgcNIIQpO9xIvfXpurzGPD3BGoPGSQm9ol6/iyqblqlKTYJtTc8M5JG4Px9kzUECS/1zp7en5fovoO+cb2QRAygjUpg2kmuLAXeXwZvtqAems/Pzs7m836/1SquwxAuZskBMPfWONrsn11efdzf3t7e30f/3326uZ6vW64vJrfGaOdWNFtRL7f3d96t0s72x/lqXmoePll9HyN9N1j53px/freB9j/drjQzaDEpBH60TBRmQop69uuXnRUm7OzsfLlUw+gXumUhqCVkkdV4qS7KhCTtVgVFeIfVACnCx5vzuXobLTApYTs/v67AzySzViZqcDSMEEC00Xq3t7cqIbiSIAQxUQYwIR8DMaH1br9UI5Y9Ick59cvVXNIYnkcZAMnfeJ5taL2zq6iaG4XQk9kNFaysixEoMtGD9q87O1fXc5QB4AySZINnl592tn8jr2wRJhjlkr+5z6eRcZG18MXRCWHFb593QPSfv1xdnp+fg0eC/zdX+5+3t3d29tu4xcEUM0Mo56wkEJhilijU8AR/tH+/ATd4dvkORoxp++p8Pp+ff/wPbjI6wdwSxGS2wAaFEkFw2sEfv5yfnV+D6qtnnyKD3L+Z91W4e3123iYIsDUIdI7WE0AwEwkC5biDeXt+eX1+fnn17Wau3hAIO2f9s5tvN3D7+vIXjKAzDBHkk1BFp0QQjKekTLz78PXr1w939/NvV+r1PgD4os6/XM7vHr6i+3+gJluZCUFAF5JA4JeIHozD8jQjkzIldTf/fX6+DwDOv91/qJDiJYMnP8ycYgRiUgiIRo9TpFCVww2eVGV6f3V2uX12eX2Xkhe7PhTa/SAI6kkhoLE/GKfIggXe2cAky/eXMP75h/hOqoPYJGRkjMAoJ4PAKdF1jGAqZ9D3PyoxF1LyHfiEJQCVr20KKaKMsZq1ZBDM8nQd29Sx3EFG1v7zeDGkfP/fBQC58oBLk0moDvCmmASCgRjuo53K8ntkj33pIbVgw10lHn96j1e3jyopDJXySnQ2CX9gFmji3ocZ0rMiSX8+pCJZyKFKyNO7Ho/D86RClneqdo52kygb9Cyds5FzPULbrKhrReMk9f5DKkNMsFLJZKYP96pGysNRJiXjuKCL4YsvpaqbowuImcpUThEzo1S0lHGr3t/dPTw83N3/qd72GlwDpwfjDCgkUQNAEDze7xPIytF5nKYNQeREx6imxHJpqNN7iCStwXMMqeYRzHCVL37vxQQOIUc8AhJDJ1wyKqo8y0GuBMkJfIarCWQ3WJ6iS5AendB5LTDr8MAP3untRLka1Wz1pDTbkNS4UlCO8cGMgxB4UqcSqiV01gVdHZFTD6ePlepHMoJIWFAF3Nlk1ADsGvhJXMuwQgLC+goqJmErQ05F4KfgSpM7FgG+LWQC3muGWXYm64uoYIXH4YEA7JGNAk3T5aQWEaqH8YGfUScMAJ3JCGSh+27enoGWjg+mndA3pbCMglh0iRC4V9Aq7GC3OlEQApODBC4HeVBOp4adyE8TSxwUkj2bMsgjBGSDfZIJvfGE0mvk+EWOFsbTKEHAdqDDPXgjwZWc5ZMm7zNRJuCFB0CQhCYkQIXewsZMS6hmw4SZSpNCVDjFgjhRjFwIADlfcjyJxETKy9Ox2BIiwcajERcnDBGEE6LuBIElIARyuM/h4AfJ1EsxESbQJeJltyA0d8YLHoDnQZsNU1JXQkSiE9YCRAGWeZT/H00zwPAgggABaAL2SVylQwAkflKtWieD1cOODyrvKXM3FEJBGJ8ch4W1R7j1CodXB2J48skLo80W9gcwVglkcxD6ad3Kk2aJqmFI2C0hlruLkGsGF/SFtxhsQEeNXuPwrOCG5p+rLeUdVWOxbln1aqFmFJK1g3gAOtK80qYpCk6tFGlmkr5omfRSbH95d7C6ZluNBQAAX+8cuZlduMGCPVskQIbjFnILAK94VNFccIHOiXmf+MiBV8gv7ouv+3MCw415jWZbqwcze1fMLt2rvY4SLkgIRHqZSvnl4YExs1cGAOQscXydSvRPOURvZkuPAKhZie8uPUJ+Lbth/I1e4rXItMT18bN572cxAJMwyOZXNHA5WvwsDLO8GKlkru6+zc84ZjbSh1ypFrzZD4oE07souP4rpAJPIMN8m59v/Ev/0v8BCU/MUAzszY0lmzas2Q/f8H+8OuS4F6izqoHNNPxYJ8G7iK9raDOq6n5fPNW//3gV0N2Df+ZjblDfJQnkYA8Ddb5v9NeCdRhf51BaV7UPlx//mI3osf599sjTwW44pIh2uQSrvrmZtbsBwczRPSSAqm9WHcSGgW9Qumcjrzvwqp5DmV7gV6EdNfPyga/7CMXMJ2zWfRud+zD9vEeSaL8MUPS6T1UdO0CXjj4IsAc3Pc8MdtGdwBssIRDs/EXgwgyMQ4cK9nS4kRX0woV/IeqQkwQFx9x1g4sqZZcp3866rm7vVSlhl6TGZiEbuOUZ5UHNSo6MmKIF+OomZYm+BQXvoOzSdgEK2kGdhkq8DHywfRtgLhBYhQFI0cMIzF2HMuDPqwmUDlWaL1pG1S9j4VsiwN+D+Tv1AWXukYUVq25AUSUaIIVQQwS3BGhLgonEYpcoM08LVCCalFuCVmIdHxgS3GAZwSFaCQUEew505lKzPUOwacf3SxbwwETKhSsEGyE4ROICZfPKmAWGiPTOgcFiPaD8+kCH+s3J+75jF3QTlZtOzazSNlL9MpKYe5GzKJrYAkIAN6sFgoByDnWLRoLwgYAHdRMLMAtIYgSUlTdpUh4YhSAU/QKBXvMQQxzRQ30YJlp6WCDYpcyaZeqWRQXoeMNAzK4h0HeDLLzh1ZBMhRABNARRIykgKYGUC0G4el61C6ATbsFYQlC1szZMj9wQqAgB5WYNEEmZmsG14VrwoOB5BZCoYIGdV8shAqokokUIfffCcewZ5R8iKTgzC7qza3C/TINaV8VSKRzO3HMdC7042IsdgFMQPSTqmj/zAspEbHNAlZxd2ynlD6nBYeC4SF1N38Z2JDgessQZZSDbAfvDfgms0QajHKBlioFLI2tF7aiBjVLTIP4hEzS0kGmBpGJfZXj4WnAsF/I4Ez3G/cxsezDzUB+WOcNS/LEHWnoqrFyjWYpL3vzxXtYHiL6/uMSd+YXXWqr4h+TYfgKF+v8AhD+3X79/gmQAAAAASUVORK5CYII=" width="16" height="16" alt="univen"/></a > University of Venda</h2>				
+					<p class="subDetails">BSc Computer Sciences and Information Systems</p>
+					<p class="subDetails">2012-2016</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<!-- completeted projects description section -->
+		<section>
+			<div class="sectionTitle">
+				<h1>COMPLETED PROJECTS</h1>
+			</div>
+			
+			<div class="sectionContent">
+				<article>
+					<h2 >Poised Projects JDBC</h2>
+                    <p>
+						This program helps a small structural engineering firm called “Poised” to keep track of the many projects on which they work. <br>
+						This program allows a user to:
+						<ul style="list-style-type:circle;">
+							<!-- An unordered list -->
+							<li>Capture the details that are used to create a new project object.</li>
+							<li>Change the due date of the project.</li>
+							<li>Change the total amount of the fee paid to date.</li>
+							<li>Update a contractor’s contact details.</li>
+							<li>Finalise and store projects in a database..</li>
+						</ul>
+						<a style= color:#FF1493; target = "_blank" href = "https://github.com/Tintswalo-Anicky/first-capstone-level3/tree/master"title="Poised Project">Poised Projects JDBC</a>     
+					</p>
+				</article>
+				
+				<article>
+					<h2>Task Management Python program</h2>				
+					<p>
+						This program manages tasks assigned to each team member of a business. <br>
+						 This program allows:
+						<ul style="list-style-type:circle;">
+							<!-- An unordered list -->
+							<li>Admin of the company to add new users, assign tasks to users and access statistics of users and tasks.</li>
+							<li>All users to view all tasks.</li>
+							<li>All users to view tasks assigned to them.</li>
+							<li>Admin to mark tasks as complete and store projects in a Text file.</li>
+						</ul>
+						<a style= color:#FF1493; target = "_blank" href = "https://github.com/Tintswalo-Anicky/last-Capstone-level1"title="Task Management">Task Management Python program</a>     
+					</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<p>
+			THANK YOU FOR VISITING THIS SITE.
+		</p>
+		
+	</div>
+</div>
+
+<!-- close the body tag -->
+</body>
+
+<!-- close html tag -->
+</html>
+
+#***************************************************END***************************************************
